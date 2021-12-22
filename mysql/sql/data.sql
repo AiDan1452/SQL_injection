@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2021 at 06:15 PM
+-- Generation Time: Dec 22, 2021 at 07:13 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -65,7 +65,7 @@ CREATE TABLE `account2` (
 --
 
 INSERT INTO `account2` (`username`, `password`, `firstname`, `lastname`, `email`) VALUES
-('NV01', '$2y$10$SCcNc5YgBeRfuNOUnHAFH.KIgMI2GBTbP8k2RYDupFDmjf7mpmQl6', 'Tuấn', 'Nguyễn Văn', 'vantuan@gmail.com'),
+('NV01', '$2a$12$g0kjZMxtYiEK2gDZzilugO37hxPufk8/p69uUaaNMDjxpq0a7q7SO', 'Tuấn', 'Nguyễn Văn', 'vantuan@gmail.com'),
 ('NV02', '$2a$12$g0kjZMxtYiEK2gDZzilugO37hxPufk8/p69uUaaNMDjxpq0a7q7SO', 'Hoàng', 'Nguyễn Văn', 'vanhoang@gmail.com'),
 ('NV03', '$2a$12$g0kjZMxtYiEK2gDZzilugO37hxPufk8/p69uUaaNMDjxpq0a7q7SO', 'Thanh', 'Nguyễn Văn', 'vanthanh@gmail.com'),
 ('NV04', '$2a$12$g0kjZMxtYiEK2gDZzilugO37hxPufk8/p69uUaaNMDjxpq0a7q7SO', 'Hà', 'Trần Văn', 'tranthiha@gmail.com'),

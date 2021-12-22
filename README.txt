@@ -1,3 +1,5 @@
+Chuẩn bị mã nguồn:
+- Chép thư mục SQL_injection vào thư mục htdocs của xampp
 Chuẩn bị data: 
 - vào http://localhost/phpmyadmin/
 - tạo database "giuaki"

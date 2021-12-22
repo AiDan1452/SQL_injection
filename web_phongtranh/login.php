@@ -27,24 +27,31 @@
                 return $error ="Can not execute command";
             }
             $results = $stm->get_result();
-            $count= $results->num_rows;
-            if($count==1)
+            if(!$results)
             {
-                    $data= $results->fetch_assoc();
-                    if(password_verify($password,$data['password']))
-                    {
-                            $_SESSION['tennv'] = $data['lastname'].' '.$data['firstname'];
-                            $_SESSION['username'] = $username;
-                            $_SESSION['password'] = $password;
-                            $_SESSION['query'] = $query;
-                            header("Location: index.php");
-                            exit();
-                    }
-                    else
-                    $error="Mật khẩu sai";
-            }    
+                $error ='Lỗi thực thi SQL ';
+            }
             else
-                $error="Tên đăng nhập sai";
+            {
+                    $count= $results->num_rows;
+                    if($count==1)
+                    {
+                            $data= $results->fetch_assoc();
+                            if(password_verify($password,$data['password']))
+                            {
+                                    $_SESSION['tennv'] = $data['lastname'].' '.$data['firstname'];
+                                    $_SESSION['username'] = $username;
+                                    $_SESSION['password'] = $password;
+                                    $_SESSION['query'] = $query;
+                                    header("Location: index.php");
+                                    exit();
+                            }
+                            else
+                            $error="Mật khẩu sai";
+                    }    
+                    else
+                        $error="Tên đăng nhập sai";
+            }
         }
     }	   
 ?>

@@ -23,9 +23,9 @@
 
             if(!$result)
             {
-                $error ='Lỗi thực thi SQL '.$con->error_log;
-                die();
+                $error ='Lỗi thực thi SQL ';
             }
+            else{
             if($result->num_rows==0)
             {
                 $error="Sai tên đăng nhập hoặc mật khẩu";
@@ -37,6 +37,7 @@
                 $_SESSION['tennv'] = $data['lastname'].' '.$data['firstname'];
                 header("Location: index.php");
                 exit();
+            }
         }
     }	   
 ?>
@@ -72,7 +73,7 @@
                     <?php
                         if(!empty($error))
                         {
-                            echo '<div class="alert alert-danger" id="errorMessage2">' . $error .'</div>';
+                            echo '<div class="alert alert-danger" id="errorMessage">' . $error .'</div>';
                         }
                         else{
                             echo '<div class="alert alert-danger" id="errorMessage" style="display: none;"></div>';

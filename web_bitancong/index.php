@@ -61,7 +61,7 @@
     <?php 
         echo '<h3  class="Bigtitle">Demo SQL Injection</h3>';
         echo '<h5  class="title">'.$query.'</h5>'; ?>
-    <table class="table" border="1">
+    <table class="table" border="1" style="border-collapse: collapse; margin: auto">
         <tbody> 
             <tr class="header">
                 <td>Username</td>
